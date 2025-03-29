@@ -1,0 +1,148 @@
+import Link from 'next/link'
+import Footer from '../../components/Footer'
+import Showcase from '../../components/Showcase'
+import { IndustryWrapper } from '../../components/Section';
+import { useLocomotiveScroll } from "../../hooks/useLocomotiveScroll";
+import { Tab, H1, H2, H3, H4, H5, H6, Paragraph, Button } from "../../components/Typography";
+
+const Index = () => {
+  const { scrollRef } = useLocomotiveScroll();
+
+  return (
+    <>
+      {/* <main ref={scrollRef} data-scroll-container>
+      <div data-scroll-section> */}
+      <Showcase
+        primaryBtn={false}
+        title={'SaaS Offerings'}
+        subTitle={'Our Software as a Service (SaaS) offerings provide efficiency and workflow optimization for a wide range of verticals. Here are just a few examples of how our solutions can be applied:'}
+      />
+      <div id="industries">
+        <IndustryWrapper
+          titleClassName='!text-[#E95018]'
+          title='Flexible Deployment – SaaS, PaaS, and On-Premise Solutions'
+          subTitleClassName='w-full md:w-4/6 mb-46'
+          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+          subTitle='We offer flexible software deployment options tailored to your business infrastructure and operational needs. Whether you require cloud-based accessibility, a scalable development platform, or full control over your data, we deliver robust, scalable, and adaptable solutions.'
+        >
+          <div className='mb-30'>
+            <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
+              {[{ title: 'SaaS (Software as a Service)', description: 'Cloud-based solutions with minimal maintenance, ensuring seamless access and automatic updates.' }, { title: 'PaaS (Platform as a Service)', description: 'A scalable environment for businesses to build, customize, and deploy applications efficiently.' }, { title: 'On-Premise', description: 'Secure, in-house solutions for organizations that require complete data control and customization.' }]?.map((item, _index) => (
+                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
+                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
+                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
+                    <div >
+                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
+                      <H6>{item?.description}</H6>
+                    </div>
+                  </div>
+                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
+                </section>
+              ))}
+            </section>
+          </div>
+
+          <H6>No matter your deployment needs, we provide future-proof solutions that align with your business model.</H6>
+        </IndustryWrapper>
+
+        <IndustryWrapper
+          titleClassName='!text-[#E95018]'
+          title='End-to-End Software Solutions'
+          subTitleClassName='w-full md:w-4/6 mb-46'
+          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+          subTitle='We specialize in building, supporting, extending, and maintaining software that drives efficiency and growth. Whether you need a new system, seamless integrations, or ongoing support, we ensure your technology works exactly as you need it to.'
+        >
+          <div className='mb-30'>
+            <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
+              {[
+                { title: 'ERP (Enterprise Resource Planning)', description: 'Unify your business operations with a comprehensive ERP system. Our solutions streamline finance, supply chain management, HR, and inventory tracking, providing real-time data insights to improve efficiency and decision-making.' },
+                { title: 'CRM (Customer Relationship Management)', description: 'Strengthen customer relationships with a powerful CRM system. We help businesses track sales, automate marketing, manage customer interactions, and enhance service efficiency—ensuring long-term growth and customer satisfaction.' },
+                { title: 'CMS (Content Management System)', description: 'Simplify digital content management with a secure, flexible CMS. Whether you need a website, media distribution platform, or internal knowledge base, we develop and maintain scalable CMS solutions tailored to your needs.' }
+              ]?.map((item, _index) => (
+                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
+                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
+                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
+                    <div >
+                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
+                      <H6>{item?.description}</H6>
+                    </div>
+                  </div>
+                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
+                </section>
+              ))}
+            </section>
+          </div>
+
+        </IndustryWrapper>
+
+        <IndustryWrapper
+          titleClassName='!text-[#E95018]'
+          title='Media Asset Management (MAM)'
+          subTitleClassName='w-full md:w-4/6 mb-46'
+          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+          subTitle='Streamline and centralize your digital media assets with an advanced Media Asset Management (MAM) system. Our solutions help media professionals organize, store, retrieve, and distribute digital content efficiently.'
+        >
+          <div className='mb-30'>
+            <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
+              {[
+                { title: 'Metadata-driven Search', description: 'Quickly locate assets using AI-powered metadata tagging and indexing.' },
+                { title: 'Version Control & Collaboration', description: 'Manage multiple versions of assets while enabling seamless team collaboration.' },
+                { title: 'Secure & Scalable Storage', description: 'Ensure safe, scalable, and structured storage for all your media assets.' }
+              ]?.map((item, _index) => (
+                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
+                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
+                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
+                    <div >
+                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
+                      <H6>{item?.description}</H6>
+                    </div>
+                  </div>
+                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
+                </section>
+              ))}
+            </section>
+          </div>
+
+          <H6>Whether you're managing video archives, broadcast content, or digital media libraries, our MAM solutions optimize workflows and enhance content lifecycle management.</H6>
+        </IndustryWrapper>
+
+        <IndustryWrapper
+          titleClassName='!text-[#E95018]'
+          title='Media Workflow Distribution'
+          subTitleClassName='w-full md:w-4/6 mb-46'
+          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+          subTitle='Distribute media effortlessly with a customized Media Workflow Distribution system designed for broadcast, streaming, and digital publishing.'
+        >
+          <div className='mb-30'>
+            <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
+              {[
+                { title: 'Automated Workflow Pipelines', description: 'Reduce manual processes with intelligent automation from ingestion to delivery.' },
+                { title: 'Multi-Platform Delivery', description: 'Seamlessly distribute content to OTT platforms, social media, and broadcasters.' },
+                { title: 'Real-Time Monitoring & Analytics', description: 'Track performance and optimize distribution with detailed insights.' }
+              ]?.map((item, _index) => (
+                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
+                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
+                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
+                    <div className='w-full md:w-4/5'>
+                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
+                      <H6>{item?.description}</H6>
+                    </div>
+                  </div>
+                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
+                </section>
+              ))}
+            </section>
+          </div>
+
+          <H6>From broadcasters and media houses to content creators and distributors, our Media Workflow Distribution solutions enable smooth, scalable, and efficient content delivery.</H6>
+        </IndustryWrapper>
+      </div>
+      <Footer />
+      {/* </div>
+    </main> */}
+    </>
+  )
+}
+
+
+export default Index
