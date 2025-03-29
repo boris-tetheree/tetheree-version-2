@@ -19,8 +19,7 @@ const Index = () => {
       />
       <div id="industries">
         <IndustryWrapper
-          titleClassName='!text-[#E95018]'
-          title='Flexible Deployment – SaaS, PaaS, and On-Premise Solutions'
+          title='Flexible Deployment'
           subTitleClassName='w-full md:w-4/6 mb-46'
           btnClassName='bg-[#E95018] text-white uppercase md:h-72'
           subTitle='We offer flexible software deployment options tailored to your business infrastructure and operational needs. Whether you require cloud-based accessibility, a scalable development platform, or full control over your data, we deliver robust, scalable, and adaptable solutions.'
@@ -46,7 +45,6 @@ const Index = () => {
         </IndustryWrapper>
 
         <IndustryWrapper
-          titleClassName='!text-[#E95018]'
           title='End-to-End Software Solutions'
           subTitleClassName='w-full md:w-4/6 mb-46'
           btnClassName='bg-[#E95018] text-white uppercase md:h-72'
@@ -76,7 +74,6 @@ const Index = () => {
         </IndustryWrapper>
 
         <IndustryWrapper
-          titleClassName='!text-[#E95018]'
           title='Media Asset Management (MAM)'
           subTitleClassName='w-full md:w-4/6 mb-46'
           btnClassName='bg-[#E95018] text-white uppercase md:h-72'
@@ -107,7 +104,6 @@ const Index = () => {
         </IndustryWrapper>
 
         <IndustryWrapper
-          titleClassName='!text-[#E95018]'
           title='Media Workflow Distribution'
           subTitleClassName='w-full md:w-4/6 mb-46'
           btnClassName='bg-[#E95018] text-white uppercase md:h-72'

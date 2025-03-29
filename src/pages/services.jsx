@@ -17,42 +17,63 @@ const Index = () => {
           title={'Services'}
           subTitle={'Unlock the future of efficiency with our cutting-edge automation solutions. We specialize in connecting people through innovative processes, allowing humans to focus on what they do best. Our tailored efficiency solutions are designed to meet the unique needs of your business, integrating seamlessly with existing workflows and use cases. Harness the power of artificial intelligence to streamline operations across various platforms, including:'}
         />
-        <div id="products">
-        <div className='relative'>
-          <div className="relative">
-            <IndustryWrapper
-              title={false}
-              subTitleClassName={'!text-center'}
-              containerClassName={'max-w-full lg:max-w-[1000px] flex justify-center !mx-auto'}
-              btnClassName='bg-[#E95018] text-white uppercase md:h-72'
-            >
-              <H2 className={`!text-center font-semibold mb-36`}>SaaS Offerings</H2>
 
-              <H6 className={'text-center mb-36 md:mb-55'}>Our Software as a Service (SaaS) offerings provide efficiency and workflow optimization for a wide range of verticals. Here are just a few examples of how our solutions can be applied:</H6>
+<div id="industries">
+      <IndustryWrapper
+          title='Flexible Software Solutions – Prebuilt or Custom'
+          subTitleClassName='w-full md:w-4/6 mb-46'
+          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+          subTitle='We provide flexible software solutions tailored to your business needs—whether you require a ready-to-deploy system or a fully customized build. Our prebuilt software, available for licensing, delivers rapid deployment and immediate value using industry-proven platforms like ERP, CRM, CMS, TMS, and LMS.'
+        >
+          <H5 className='text-white'>For businesses with unique requirements, we develop custom software solutions that align with specific workflows, industry challenges, and growth objectives. Whether you're looking for a turnkey solution or a highly tailored system, our expertise ensures seamless implementation, scalability, and long-term success.</H5>
+        </IndustryWrapper>
 
-              <Link href={'/about-us'}>
-                <Button className={'w-fit flex !bg-transparent text-white uppercase mx-auto'}>LEARN ABOUT US</Button>
-              </Link>
+        <IndustryWrapper
+          title='Prebuilt Software – Fast, Scalable, and Reliable'
+          subTitleClassName='w-full md:w-4/6 mb-46'
+          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+          subTitle='Our prebuilt software solutions offer an efficient and cost-effective way to optimize business operations. Designed for immediate deployment, these platforms cover essential functions with minimal setup, seamless integration, and ongoing support.'
+        >
+          <H5 className='text-white mb-32'>With industry best practices built in, our solutions help businesses enhance efficiency, automate workflows, and scale confidently—without the complexities of custom development.</H5>
+          <Button className={`!bg-[#E95018] text-white w-fit !h-70 !text-md`}>See Our Products</Button>
+        </IndustryWrapper>
 
-              <div className='mt-36 md:mt-55'>
-                <section className='flex items-stretch justify-center gap-16 flex-wrap lg:flex-nowrap mx-auto mb-26'>
-                  {['Streamlined logistics management', 'Advanced media production workflows', 'Comprehensive coaching management tools', 'Optimized educational platforms']?.map((item, _index) => (
-                    <Tab key={_index} className={`!min-w-[240px] ${false && '!bg-[#E95018] !border-white !text-white'} !h-auto w-full flex-grow hover:!bg-[#E95018] hover:!border-white hover:!text-white pt-40 pb-26`}>
-                      <img className='mb-24' src={`/assets/industries/industry-${++_index}.svg`} alt="" />
-                      <span className={`${false && '!text-white'} text-[#FAFAFA] font-normal text-center hover:!text-white text-md`}>{item}</span>
-                    </Tab>
-                  ))}
+        <IndustryWrapper
+          title='Custom Software – Tailored to Your Business'
+          subTitleClassName='w-full md:w-4/6 mb-46'
+          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+          subTitle='Your business is unique, and your software should be too. We specialize in fully customized solutions that extend beyond traditional ERP, CRM, CMS, TMS, and LMS platforms. Whether you need a hybrid system, proprietary application, or automation-driven platform, we design, develop, and maintain software tailored to your exact needs.'
+        >
+          <div className='mb-30'>
+            <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
+              {[{ title: 'Bespoke Development', description: 'Custom-built applications aligned with your workflows and objectives.' }, { title: 'Scalable Architecture', description: 'Solutions that evolve as your business grows.' }, { title: 'Seamless Integrations', description: 'Smooth connectivity with existing tools and third-party services.' }, { title: 'Future-Proof Technology', description: 'Modern frameworks and AI-driven automation for long-term efficiency.' }]?.map((item, _index) => (
+                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
+                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
+                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
+                    <div >
+                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
+                      <H6>{item?.description}</H6>
+                    </div>
+                  </div>
+                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
                 </section>
-              </div>
-            </IndustryWrapper>
-
-            <div className='bg-theme w-full pb-99'>
-              <div className='w-[320px] flex h-1 bg-[#E95018] mx-auto' />
-            </div>
+              ))}
+            </section>
           </div>
-          <img className='absolute top-0 left-2/4 -translate-x-2/4 pointer-events-none' src="/assets/homepage-tabs-blur.svg" alt="" />
+
+          <H6>No matter the complexity or industry, we bring innovation, flexibility, and expert engineering to deliver solutions that make a real impact.</H6>
+        </IndustryWrapper>
+
+        <IndustryWrapper
+          title='Hybrid Solutions – Custom Integrations for Existing Platforms'
+          subTitleClassName='w-full md:w-4/6 mb-46'
+          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+          subTitle='Maximize the value of your existing systems with custom-built solutions that seamlessly integrate with industry-leading platforms like ERP, CRM, CMS, TMS, and LMS. Our hybrid approach allows you to enhance your current technology without a complete system overhaul.'
+        >
+          <H5 className='text-white mb-32'>From workflow automation and AI-driven insights to custom dashboards and specialized integrations, we extend the capabilities of your platforms while ensuring smooth interoperability.</H5>
+          <H5 className='text-white mb-32'>With a hybrid solution, you get the best of both worlds—the stability of proven platforms and the flexibility of custom development, all working together to drive efficiency, innovation, and growth.</H5>
+        </IndustryWrapper>
         </div>
-      </div>
 
         {/* <div className='relative bg-theme'>
             <div className="container relative z-10 flex flex-col px-20 mx-auto">
