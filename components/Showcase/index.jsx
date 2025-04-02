@@ -1,15 +1,15 @@
 import Navbar from '../Navbar'
 import { H1, H4, H5, H6, Caption, Button } from "../Typography";
 
-const Index = ({ supTitle, title, subTitle, headerImg = false, contactForm, primaryBtn = true, secondaryBtn = false }) => {
+const Index = ({ supTitle, title, subTitle, headerImg = false, aboutUs, contactForm, primaryBtn = true, secondaryBtn = false }) => {
     return (
         <>
         <Navbar />
         <header className="bg-theme relative">
             <div className='relative z-10'>
                 <div className="container mx-auto">
-                    <section className='w-full flex flex-col md:flex-row justify-between py-76 md:pt-[200px] md:pb-[240px] gap-72 md:gap-32 px-20 md:px-54'>
-                        <div className='relative'>
+                    <section className='w-full flex flex-col md:flex-row items-center justify-between py-76 md:pt-[200px] md:pb-[240px] gap-72 md:gap-32 px-20 md:px-54'>
+                        <div className='relative w-full'>
                         <div className='relative z-10'>
                             {supTitle && <H5 className='hidden md:block text-white font-medium mb-16'>{supTitle ?? 'We Build Solution for the industry'}</H5>}
                             <H1 data-scroll className='text-left pr-0 lg:pr-64 mb-16'>{title ?? `Custom software for team collaboration`}</H1>
@@ -22,9 +22,9 @@ const Index = ({ supTitle, title, subTitle, headerImg = false, contactForm, prim
                             <img className="w-fit absolute top-2/4 -translate-y-2/4 object-cover -z-[1]" src="/assets/header-blur.png" alt="" />
                         </div>
 
-                        {!headerImg && !contactForm && <div className='w-2/6 shrink-0' />}
+                        {aboutUs && <div className='w-2/6 shrink-0' />}
 
-                        {headerImg && <div className='w-full relative max-w-full h-full'>
+                        {!contactForm && !aboutUs && <div className='w-full relative max-w-full h-full'>
                             <img className="w-full relative max-w-full h-full max-h-[400px] object-contain z-10" src="/assets/header.svg" alt="" />
                         </div>}
 
