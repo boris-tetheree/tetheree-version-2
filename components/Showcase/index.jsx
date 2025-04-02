@@ -8,7 +8,7 @@ const Index = ({ supTitle, title, subTitle, headerImg = false, aboutUs, contactF
         <header className="bg-theme relative">
             <div className='relative z-10'>
                 <div className="container mx-auto">
-                    <section className='w-full flex flex-col md:flex-row items-center justify-between py-76 md:pt-[200px] md:pb-[240px] gap-72 md:gap-32 px-20 md:px-54'>
+                    <section className='w-full flex flex-col md:flex-row items-center justify-between py-76 md:pt-[200px] md:pb-[240px] gap-72 md:gap-32 px-20 md:px-32'>
                         <div className='relative w-full'>
                         <div className='relative z-10'>
                             {supTitle && <H5 className='hidden md:block text-white font-medium mb-16'>{supTitle ?? 'We Build Solution for the industry'}</H5>}

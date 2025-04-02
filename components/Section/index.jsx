@@ -17,7 +17,7 @@ export const PitchPoint = ({ number, title, subTitle, subTitleClassName, titleCl
 
     return (
         <div className='bg-theme'> 
-            <div className="container flex flex-col mx-auto">
+            <div className="container flex flex-col px-20 md:px-32 mx-auto">
                 <section className={`${containerClassName} group w-full flex flex-col xl:flex-row justify-between border border-[#333333] hover:bg-[#121212] hover:border-[#4e4e4e] rounded-sm transition-all gap-30 py-46 md:py-64 px-20 md:px-40 mb-20`}>
                     <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
                         <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>{number}</span>
@@ -47,8 +47,8 @@ export const IndustryWrapper = ({ title, subTitle, subTitleClassName, btnTitle, 
 
     return (
         <div className={`${wrapperClassName} bg-theme`}>
-            <div className="container flex flex-col mx-auto">
-                <section className={`${containerClassName} w-full flex flex-col justify-center py-46 px-20`}>
+            <div className="container flex flex-col px-20 md:px-32 mx-auto">
+                <section className={`${containerClassName} w-full flex flex-col justify-center py-46`}>
                     {title && <H2 className={`${titleClassName} font-semibold text-left mb-8`}>{title}</H2>}
                     {subTitle && <H6 className={`${subTitleClassName} font-normal w-full text-left mb-36`}>{subTitle}</H6>}
                     {children}
@@ -63,7 +63,7 @@ export const VideoContent = ({ title, subTitle, subTitleClassName, btnTitle, tit
     return (
         <div className='bg-theme'>
             <div className="container mx-auto">
-                <section className='w-full flex flex-col md:flex-row gap-64 md:gap-28 justify-between px-20'>
+                <section className='w-full flex flex-col md:flex-row gap-64 md:gap-28 justify-between px-20 md:px-32'>
                     <div className=''>
                         <H1 className='text-center md:text-left mb-14'>Bring the ultimate search to video content</H1>
                         <H4 className='w-full text-center md:text-left !text-[#6D6D6D] mb-26'>"Effortless Integration: Streamline Your Workflow</H4>

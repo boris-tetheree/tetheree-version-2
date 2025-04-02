@@ -17,15 +17,15 @@ const Index = () => {
         title={'Customized Integrations'}
         subTitle={'Maximize the potential of industry-leading tools with our customized integration solutions. We help you make the most of whats available in the market by seamlessly incorporating leading technologies into your existing systems, complete with recognizable integration logos.'}
       />
-            <div id="industries">
-            <IndustryWrapper
+      <div id="industries">
+        <IndustryWrapper
           title='Seamless Integrations – Connect, Automate, and Scale'
           subTitleClassName='w-full md:w-4/6 font-semibold mb-46'
           btnClassName='bg-[#E95018] text-white uppercase md:h-72'
           subTitle='Unlock the Power of Seamless Connectivity'
         >
 
-<H6>Your business relies on multiple tools and platforms to operate efficiently—but managing disconnected systems can slow you down. Our integration solutions bring everything together, ensuring your existing workflows and custom-built solutions seamlessly connect with the third-party services you depend on. Whether you're using ERP, CRM, CMS, TMS, LMS, MAM, or media workflow systems, we help you integrate essential services to enhance efficiency, eliminate manual processes, and drive growth.</H6>
+          <H6>Your business relies on multiple tools and platforms to operate efficiently—but managing disconnected systems can slow you down. Our integration solutions bring everything together, ensuring your existing workflows and custom-built solutions seamlessly connect with the third-party services you depend on. Whether you're using ERP, CRM, CMS, TMS, LMS, MAM, or media workflow systems, we help you integrate essential services to enhance efficiency, eliminate manual processes, and drive growth.</H6>
         </IndustryWrapper>
 
         <IndustryWrapper
@@ -37,16 +37,10 @@ const Index = () => {
           <div className='mb-30'>
             <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
               {[{ title: 'Increased Efficiency', description: 'Automate data flow between platforms, reducing manual input and errors.' }, { title: 'Improved Accuracy', description: 'Sync real-time data across systems to ensure consistency and reliability.' }, { title: 'Scalability', description: 'Expand your business without worrying about disconnected systems slowing you down.' }, { title: 'Enhanced Customer Experience', description: 'Provide a seamless, unified experience across all touchpoints.' }, { title: 'Cost Savings', description: 'Reduce operational overhead by eliminating redundant processes.' }]?.map((item, _index) => (
-                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
-                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
-                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
-                    <div >
-                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
-                      <H6>{item?.description}</H6>
-                    </div>
-                  </div>
-                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
-                </section>
+                <div className='mb-20 md:mb-32'>
+                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H6>{item?.description}</H6>
+                </div>
               ))}
             </section>
           </div>
@@ -62,16 +56,11 @@ const Index = () => {
         >
           <div className='mb-30'>
             <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
-              {[{ title: 'Business & Productivity Tools' },{ title: 'Communication & Collaboration' },{ title: 'Logistics & Supply Chain' },{ title: 'Education & Learning' },{ title: 'Media & Content Management' },{ title: 'AI & Automation Services' }]?.map((item, _index) => (
-                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
-                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
-                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
-                    <div >
-                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
-                    </div>
-                  </div>
-                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
-                </section>
+              {[{ title: 'Business & Productivity Tools' }, { title: 'Communication & Collaboration' }, { title: 'Logistics & Supply Chain' }, { title: 'Education & Learning' }, { title: 'Media & Content Management' }, { title: 'AI & Automation Services' }]?.map((item, _index) => (
+                <div className='mb-20 md:mb-32'>
+                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H6>{item?.description}</H6>
+                </div>
               ))}
             </section>
           </div>
@@ -86,16 +75,11 @@ const Index = () => {
         >
           <div className='mb-30'>
             <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
-              {[{ title: 'Connecting legacy systems to modern platforms' },{ title: 'Building real-time data synchronization between applications' },{ title: 'Creating automated workflows that reduce manual tasks' },{ title: 'Integrating AI-driven analytics and insights into existing processes' }]?.map((item, _index) => (
-                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
-                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
-                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
-                    <div >
-                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
-                    </div>
-                  </div>
-                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
-                </section>
+              {[{ title: 'Connecting legacy systems to modern platforms' }, { title: 'Building real-time data synchronization between applications' }, { title: 'Creating automated workflows that reduce manual tasks' }, { title: 'Integrating AI-driven analytics and insights into existing processes' }]?.map((item, _index) => (
+                <div className='mb-20 md:mb-32'>
+                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H6>{item?.description}</H6>
+                </div>
               ))}
             </section>
           </div>
@@ -120,7 +104,7 @@ const Index = () => {
         >
 
         </IndustryWrapper>
-        </div>
+      </div>
       {/* <div id="integrations">
         <div className='relative'>
           <div className="relative">

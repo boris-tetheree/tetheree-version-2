@@ -27,16 +27,10 @@ const Index = () => {
           <div className='mb-30'>
             <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
               {[{ title: 'SaaS (Software as a Service)', description: 'Cloud-based solutions with minimal maintenance, ensuring seamless access and automatic updates.' }, { title: 'PaaS (Platform as a Service)', description: 'A scalable environment for businesses to build, customize, and deploy applications efficiently.' }, { title: 'On-Premise', description: 'Secure, in-house solutions for organizations that require complete data control and customization.' }]?.map((item, _index) => (
-                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
-                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
-                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
-                    <div >
-                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
-                      <H6>{item?.description}</H6>
-                    </div>
-                  </div>
-                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
-                </section>
+                <div className='mb-20 md:mb-32'>
+                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H6>{item?.description}</H6>
+                </div>
               ))}
             </section>
           </div>
@@ -57,16 +51,10 @@ const Index = () => {
                 { title: 'CRM (Customer Relationship Management)', description: 'Strengthen customer relationships with a powerful CRM system. We help businesses track sales, automate marketing, manage customer interactions, and enhance service efficiency—ensuring long-term growth and customer satisfaction.' },
                 { title: 'CMS (Content Management System)', description: 'Simplify digital content management with a secure, flexible CMS. Whether you need a website, media distribution platform, or internal knowledge base, we develop and maintain scalable CMS solutions tailored to your needs.' }
               ]?.map((item, _index) => (
-                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
-                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
-                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
-                    <div >
-                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
-                      <H6>{item?.description}</H6>
-                    </div>
-                  </div>
-                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
-                </section>
+                <div className='mb-20 md:mb-32'>
+                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H6>{item?.description}</H6>
+                </div>
               ))}
             </section>
           </div>
@@ -86,16 +74,10 @@ const Index = () => {
                 { title: 'Version Control & Collaboration', description: 'Manage multiple versions of assets while enabling seamless team collaboration.' },
                 { title: 'Secure & Scalable Storage', description: 'Ensure safe, scalable, and structured storage for all your media assets.' }
               ]?.map((item, _index) => (
-                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
-                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
-                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
-                    <div >
-                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
-                      <H6>{item?.description}</H6>
-                    </div>
-                  </div>
-                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
-                </section>
+                <div className='mb-20 md:mb-32'>
+                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H6>{item?.description}</H6>
+                </div>
               ))}
             </section>
           </div>
@@ -116,16 +98,10 @@ const Index = () => {
                 { title: 'Multi-Platform Delivery', description: 'Seamlessly distribute content to OTT platforms, social media, and broadcasters.' },
                 { title: 'Real-Time Monitoring & Analytics', description: 'Track performance and optimize distribution with detailed insights.' }
               ]?.map((item, _index) => (
-                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
-                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
-                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
-                    <div className='w-full md:w-4/5'>
-                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
-                      <H6>{item?.description}</H6>
-                    </div>
-                  </div>
-                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
-                </section>
+                <div className='mb-20 md:mb-32'>
+                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H6>{item?.description}</H6>
+                </div>
               ))}
             </section>
           </div>

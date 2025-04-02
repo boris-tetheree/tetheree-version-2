@@ -36,16 +36,10 @@ const Index = () => {
           <div className='mb-30'>
             <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
               {[{ title: 'Reduce Manual Work', description: 'Automate repetitive tasks, freeing up your team for higher-value work.' }, { title: 'Improve Accuracy & Compliance', description: 'Eliminate human errors and ensure adherence to business rules.' }, { title: 'Enhance Efficiency', description: 'Streamline workflows, accelerate turnaround times, and reduce costs.' }, { title: 'Seamlessly Integrate with Your Systems',  description: 'Connect automation with your existing software for end-to-end efficiency.'}, , { title: 'Scale with Your Business',  description: 'Flexible and adaptable workflows that evolve with your operations.'}]?.map((item, _index) => (
-                <section className='group bg-[#121212] border border-[#282828] flex flex-col lg:flex-row items-center justify-between gap-36 md:gap-99 px-24 md:px-72 pt-36 pb-70'>
-                  <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
-                    <span className='block w-full md:w-auto !text-[#F3722C] text-24 font-normal text-center md:text-left mt-12'>0{++_index}</span>
-                    <div >
-                      <H3 className={'!font-semibold transition-all mb-24'}>{item?.title}</H3>
+                               <div className='mb-20 md:mb-32'>
+                               <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
                       <H6>{item?.description}</H6>
-                    </div>
-                  </div>
-                  <img className='w-full md:w-2/4 max-h-[302px] object-contain px-20 md:pr-0' src={`/assets/globe/Logistics.png`} alt="" />
-                </section>
+                             </div>
               ))}
             </section>
           </div>
