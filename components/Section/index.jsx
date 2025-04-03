@@ -16,7 +16,7 @@ export const FeaturedProduct = ({ containerClassName, title, subTitle, btnClassN
 export const PitchPoint = ({ number, title, subTitle, subTitleClassName, titleClassName, containerClassName, icons }) => {
 
     return (
-        <div className='bg-theme'> 
+        <div className='bg-theme'>
             <div className="container flex flex-col px-20 md:px-32 mx-auto">
                 <section className={`${containerClassName} group w-full flex flex-col xl:flex-row justify-between border border-[#333333] hover:bg-[#121212] hover:border-[#4e4e4e] rounded-sm transition-all gap-30 py-46 md:py-64 px-20 md:px-40 mb-20`}>
                     <div className='flex flex-col md:flex-row items-start gap-18 md:gap-40 mb-8'>
@@ -63,7 +63,7 @@ export const VideoContent = ({ title, subTitle, subTitleClassName, btnTitle, tit
     return (
         <div className='bg-theme'>
             <div className="container mx-auto">
-                <section className='w-full flex flex-col md:flex-row gap-64 md:gap-28 justify-between px-20 md:px-32'>
+                <section className='w-full flex flex-col md:flex-row gap-64 md:gap-28 justify-between py-26 md:py-36 lg:py-52 px-20 md:px-32'>
                     <div className=''>
                         <H1 className='text-center md:text-left mb-14'>Bring the ultimate search to video content</H1>
                         <H4 className='w-full text-center md:text-left !text-[#6D6D6D] mb-26'>"Effortless Integration: Streamline Your Workflow</H4>

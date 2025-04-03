@@ -42,7 +42,7 @@ const Index = () => {
             <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap ml-12 md:ml-32'>
               {industryItems?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
-                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
                   <H6>Streamline your <span className='lowercase'>{item?.title}</span> operations with our AI-powered automation solutions. We specialize in optimizing supply chains, reducing costs, and improving efficiency.</H6>
                 </div>
               ))}

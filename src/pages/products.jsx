@@ -28,7 +28,7 @@ const Index = () => {
             <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
               {[{ title: 'SaaS (Software as a Service)', description: 'Cloud-based solutions with minimal maintenance, ensuring seamless access and automatic updates.' }, { title: 'PaaS (Platform as a Service)', description: 'A scalable environment for businesses to build, customize, and deploy applications efficiently.' }, { title: 'On-Premise', description: 'Secure, in-house solutions for organizations that require complete data control and customization.' }]?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
-                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
                   <H6>{item?.description}</H6>
                 </div>
               ))}
@@ -52,7 +52,7 @@ const Index = () => {
                 { title: 'CMS (Content Management System)', description: 'Simplify digital content management with a secure, flexible CMS. Whether you need a website, media distribution platform, or internal knowledge base, we develop and maintain scalable CMS solutions tailored to your needs.' }
               ]?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
-                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
                   <H6>{item?.description}</H6>
                 </div>
               ))}
@@ -75,7 +75,7 @@ const Index = () => {
                 { title: 'Secure & Scalable Storage', description: 'Ensure safe, scalable, and structured storage for all your media assets.' }
               ]?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
-                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
                   <H6>{item?.description}</H6>
                 </div>
               ))}
@@ -99,7 +99,7 @@ const Index = () => {
                 { title: 'Real-Time Monitoring & Analytics', description: 'Track performance and optimize distribution with detailed insights.' }
               ]?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
-                  <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
+                  <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
                   <H6>{item?.description}</H6>
                 </div>
               ))}

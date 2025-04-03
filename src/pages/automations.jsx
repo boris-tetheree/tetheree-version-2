@@ -18,7 +18,7 @@ const Index = () => {
         subTitle={'Streamline your workflows with our fully customizable automation solutions. We automate and monitor tasks, ensuring efficiency at every step. From routine tasks to complex processes, our automation tools are designed to keep your business running smoothly and efficiently.'}
       />
       <div id="industries">
-      <IndustryWrapper
+        <IndustryWrapper
           title='Customized Automation Workflows'
           subTitleClassName='w-full md:w-4/6 font-semibold mb-46'
           btnClassName='bg-[#E95018] text-white uppercase md:h-72'
@@ -35,11 +35,11 @@ const Index = () => {
         >
           <div className='mb-30'>
             <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap'>
-              {[{ title: 'Reduce Manual Work', description: 'Automate repetitive tasks, freeing up your team for higher-value work.' }, { title: 'Improve Accuracy & Compliance', description: 'Eliminate human errors and ensure adherence to business rules.' }, { title: 'Enhance Efficiency', description: 'Streamline workflows, accelerate turnaround times, and reduce costs.' }, { title: 'Seamlessly Integrate with Your Systems',  description: 'Connect automation with your existing software for end-to-end efficiency.'}, , { title: 'Scale with Your Business',  description: 'Flexible and adaptable workflows that evolve with your operations.'}]?.map((item, _index) => (
-                               <div className='mb-20 md:mb-32'>
-                               <H4 className={'!font-semibold mb-24'}><span className='text-[#E95018] mr-6'>0{++_index}</span> {item?.title}</H4>
-                      <H6>{item?.description}</H6>
-                             </div>
+              {[{ title: 'Reduce Manual Work', description: 'Automate repetitive tasks, freeing up your team for higher-value work.' }, { title: 'Improve Accuracy & Compliance', description: 'Eliminate human errors and ensure adherence to business rules.' }, { title: 'Enhance Efficiency', description: 'Streamline workflows, accelerate turnaround times, and reduce costs.' }, { title: 'Seamlessly Integrate with Your Systems', description: 'Connect automation with your existing software for end-to-end efficiency.' }, , { title: 'Scale with Your Business', description: 'Flexible and adaptable workflows that evolve with your operations.' }]?.map((item, _index) => (
+                <div className='mb-20 md:mb-32'>
+                  <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
+                  <H6>{item?.description}</H6>
+                </div>
               ))}
             </section>
           </div>
@@ -61,7 +61,7 @@ const Index = () => {
           subTitle='From streamlining internal processes to enhancing customer experiences, our automation solutions are designed to fit your business like a glove. Tell us your challenges, and we’ll build the right automation workflow to solve them.'
         >
         </IndustryWrapper>
-        </div>
+      </div>
 
       {/* <div id="automations">
         <div className='relative'>
