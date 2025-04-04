@@ -28,10 +28,10 @@ const Index = () => {
 
       <IndustryWrapper
         titleClassName='text-theme'
-        title='Industries We Serve'
+        title='Transform. Automate. Scale'
         subTitleClassName='w-full md:w-4/6 mb-46'
         btnClassName='bg-[#E95018] text-white uppercase md:h-72'
-        subTitle={`Every industry has unique challenges, and the right technology can be a game-changer. We provide tailored software solutions designed to enhance efficiency, automate critical processes, and drive business growth. Whether youre optimizing supply chains, managing properties, delivering education, or providing exceptional concierge services, our solutions are built to streamline operations and elevate performance.`}>
+        subTitle={`Organizations need powerful, adaptable, and scalable software solutions to stay ahead. We specialize in custom and prebuilt software, automation workflows, and seamless integrations that streamline operations, eliminate inefficiencies, and drive business growth. Whether you need an industry-proven solution or a fully customized platform, we have the expertise to deliver technology that works for your business.`}>
         <div className='mb-30'>
           <H2 className={`font-semibold text-left mb-8`}>Tailored Software Solutions for Every Business</H2>
           <section className='flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap ml-12 md:ml-32'>
@@ -42,25 +42,38 @@ const Index = () => {
           </section>
         </div>
       </IndustryWrapper>
-      <PitchPointsWrapper />
 
-
+      <IndustryWrapper
+        titleClassName='text-theme'
+        title='Solutions Built for Your Industry'
+        subTitleClassName='w-full md:w-4/6 mb-46'
+        btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+        subTitle={`We develop, integrate, and maintain scalable, future-proof solutions for businesses across industries:`}>
+        <PitchPointsWrapper />
+      </IndustryWrapper>
 
       <FeaturedProduct
-        title="Channel Partnerships"
-        subTitle="Expand your business opportunities through our channel partnership program. By reselling our solutions, you can grow your presence in your verticals and offer your clients the very best in efficiency and automation."
-        btnTitle="Get Started"
+        title="Future-Ready Software: Built for Growth"
+        subTitle="We offer SaaS, PaaS, and on-premise deployments, ensuring your software adapts to your infrastructure and operational needs. Whether you're launching a new solution, scaling an enterprise system, or modernizing legacy software, we provide the technology and expertise to drive efficiency, innovation, and competitive advantage."
+        btnTitle="Explore Our Products"
       />
 
-      <FeaturedProduct
-        title="Feature Products"
-        containerClassName="!relative !bg-theme !pb-99"
-        subTitle="Explore our suite of feature products, designed to bring automation and efficiency to the forefront of your operations:"
-        featuredBlur="/assets/featured-blur.svg"
-      />
-
-      <VideoContent />
       <div className="container relative z-10 flex flex-col px-20 mx-auto">
+        <section className={`w-full flex flex-col justify-center pt-46`}>
+          <H2 className={`font-semibold text-left mb-24 md:mb-32`}>Next-Level Automation & Integrations</H2>
+        </section>
+        <section className='flex flex-col md:flex-row flex-wrap lg:flex-nowrap items-stretch justify-between gap-20 mb-99'>
+          {[{ title: 'Customized Workflows', subTitle: 'Automate repetitive tasks, enhance accuracy, and improve efficiency across all business functions.' }, { title: 'Seamless Integrations', subTitle: 'Connect existing tools, enterprise software, and third-party services to create a frictionless, scalable system.' }, { title: 'AI-Powered Insights', subTitle: 'Leverage AI-driven automation for predictive analytics, smart data processing, and workflow optimization.' }]?.map((item, _index) => (
+            <Tab className={'!block !w-full !h-auto bg-[#E4E4E733] !px-26 !pt-36 !pb-42'} >
+              <img className='w-24 mb-12' src={`/assets/Leaf.svg`} alt="" />
+              <H4 className={`font-medium text-left mb-13`}>{item?.title}</H4>
+              <Paragraph className={`font-normal w-full text-left`}>{item?.subTitle}</Paragraph>
+            </Tab>
+          ))}
+        </section>
+      </div>
+
+      <div className="container relative z-10 flex flex-col px-20 mx-auto pb-24 md:pb-36 lg:pb-46">
         <section className='flex flex-col md:flex-row items-stretch justify-between gap-24 md:gap-36'>
           {[
             { title: 'Our values ​​and commitments', subTitle: 'Unlock the future of efficiency with our cutting-edge automation solutions. We specialize in connecting people through innovative processes, allowing humans to focus on what they do best.' },
