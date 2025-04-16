@@ -15,6 +15,7 @@ const Index = () => {
       <Showcase
         primaryBtn={false}
         title={'Customized Integrations'}
+        headerImgSrc={"/assets/header/integration.svg"}
         subTitle={'Maximize the potential of industry-leading tools with our customized integration solutions. We help you make the most of whats available in the market by seamlessly incorporating leading technologies into your existing systems, complete with recognizable integration logos.'}
       />
       <div id="industries">

@@ -1,7 +1,7 @@
 import Navbar from '../Navbar'
 import { H1, H4, H5, H6, Caption, Button } from "../Typography";
 
-const Index = ({ supTitle, title, subTitle, headerImg = false, aboutUs, contactForm, primaryBtn = true, secondaryBtn = false }) => {
+const Index = ({ supTitle, title, subTitle, headerImg = false, aboutUs, contactForm, primaryBtn = true, secondaryBtn = false, headerImgSrc }) => {
     return (
         <>
         <Navbar />
@@ -25,7 +25,7 @@ const Index = ({ supTitle, title, subTitle, headerImg = false, aboutUs, contactF
                         {aboutUs && <div className='w-2/6 shrink-0' />}
 
                         {!contactForm && !aboutUs && <div className='w-full relative max-w-full h-full'>
-                            <img className="w-full relative max-w-full h-full max-h-[400px] object-contain z-10" src="/assets/header.svg" alt="" />
+                            <img className="w-full relative max-w-full h-full max-h-[400px] object-contain z-10" src={headerImgSrc ?? "/assets/header.svg"} alt="" />
                         </div>}
 
                         {contactForm && <div className='w-full h-full bg-[#b7b7b921] rounded-3xl p-32 md:p-48 md:pb-68'>

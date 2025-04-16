@@ -15,6 +15,7 @@ const Index = () => {
       <Showcase
         primaryBtn={false}
         title={'Customized Automations'}
+        headerImgSrc={"/assets/header/Automation.svg"}
         subTitle={'Streamline your workflows with our fully customizable automation solutions. We automate and monitor tasks, ensuring efficiency at every step. From routine tasks to complex processes, our automation tools are designed to keep your business running smoothly and efficiently.'}
       />
       <div id="industries">

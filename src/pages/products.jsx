@@ -15,6 +15,7 @@ const Index = () => {
       <Showcase
         primaryBtn={false}
         title={'SaaS Offerings'}
+        headerImgSrc={"/assets/header/Products.svg"}
         subTitle={'Our Software as a Service (SaaS) offerings provide efficiency and workflow optimization for a wide range of verticals. Here are just a few examples of how our solutions can be applied:'}
       />
       <div id="industries">

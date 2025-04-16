@@ -28,6 +28,7 @@ const Index = () => {
       <Showcase
         primaryBtn={false}
         title={'Industries'}
+        headerImgSrc={"/assets/header/Industries.svg"}
         subTitle={'Our expertise spans a broad spectrum of industries, ensuring that no matter your field, we have the tools to drive your success:'}
       />
       <div id="industries">
