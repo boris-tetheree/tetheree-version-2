@@ -1,12 +1,15 @@
+import { useRouter } from 'next/router';
 import { H1, H2, H3, H4, H5, H6, Button } from '../Typography'
 
 export const FeaturedProduct = ({ containerClassName, title, subTitle, btnClassName, btnTitle, featuredBlur }) => {
+  const router = useRouter();
+
     return (
         <section className={`${containerClassName} relative bg-[#121212] py-136`}>
             <div className="container flex flex-col items-center lg:max-w-[1000px] mx-auto px-20 md:px-64">
                 <H2 className={'mb-6'}>{title}</H2>
                 {subTitle && <H6 className={'text-center mb-50'}>{subTitle}</H6>}
-                {btnTitle && <Button className={`${btnClassName} !bg-[#E95018] text-white !h-60 lg:!h-72 uppercase md:!text-2xs px-26 md:px-36`}>{btnTitle}</Button>}
+                {btnTitle && <Button onClick={() => router.push('/products')} className={`${btnClassName} !bg-[#E95018] text-white !h-60 lg:!h-72 uppercase md:!text-2xs px-26 md:px-36`}>{btnTitle}</Button>}
             </div>
             {featuredBlur && <img className="w-fit absolute h-full left-0 top-0" src={featuredBlur} alt="" />}
         </section>

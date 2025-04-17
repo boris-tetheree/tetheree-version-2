@@ -40,7 +40,7 @@ const Index = () => {
               {[{ title: 'Increased Efficiency', description: 'Automate data flow between platforms, reducing manual input and errors.' }, { title: 'Improved Accuracy', description: 'Sync real-time data across systems to ensure consistency and reliability.' }, { title: 'Scalability', description: 'Expand your business without worrying about disconnected systems slowing you down.' }, { title: 'Enhanced Customer Experience', description: 'Provide a seamless, unified experience across all touchpoints.' }, { title: 'Cost Savings', description: 'Reduce operational overhead by eliminating redundant processes.' }]?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
                   <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
-                  <H6>{item?.description}</H6>
+                  <H6 className='ml-28'>{item?.description}</H6>
                 </div>
               ))}
             </section>
@@ -60,7 +60,7 @@ const Index = () => {
               {[{ title: 'Business & Productivity Tools' }, { title: 'Communication & Collaboration' }, { title: 'Logistics & Supply Chain' }, { title: 'Education & Learning' }, { title: 'Media & Content Management' }, { title: 'AI & Automation Services' }]?.map((item, _index) => (
                 <div className='mb-20'>
                   <H4><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
-                  <H6>{item?.description}</H6>
+                  <H6 className='ml-28'>{item?.description}</H6>
                 </div>
               ))}
             </section>
@@ -79,7 +79,7 @@ const Index = () => {
               {[{ title: 'Connecting legacy systems to modern platforms' }, { title: 'Building real-time data synchronization between applications' }, { title: 'Creating automated workflows that reduce manual tasks' }, { title: 'Integrating AI-driven analytics and insights into existing processes' }]?.map((item, _index) => (
                 <div className='mb-20'>
                   <H4><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
-                  <H6>{item?.description}</H6>
+                  <H6 className='ml-28'>{item?.description}</H6>
                 </div>
               ))}
             </section>

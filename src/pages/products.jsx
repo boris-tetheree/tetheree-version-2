@@ -30,7 +30,7 @@ const Index = () => {
               {[{ title: 'SaaS (Software as a Service)', description: 'Cloud-based solutions with minimal maintenance, ensuring seamless access and automatic updates.' }, { title: 'PaaS (Platform as a Service)', description: 'A scalable environment for businesses to build, customize, and deploy applications efficiently.' }, { title: 'On-Premise', description: 'Secure, in-house solutions for organizations that require complete data control and customization.' }]?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
                   <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
-                  <H6>{item?.description}</H6>
+                  <H6 className='ml-28'>{item?.description}</H6>
                 </div>
               ))}
             </section>
@@ -54,7 +54,7 @@ const Index = () => {
               ]?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
                   <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
-                  <H6>{item?.description}</H6>
+                  <H6 className='ml-28'>{item?.description}</H6>
                 </div>
               ))}
             </section>
@@ -77,7 +77,7 @@ const Index = () => {
               ]?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
                   <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
-                  <H6>{item?.description}</H6>
+                  <H6 className='ml-28'>{item?.description}</H6>
                 </div>
               ))}
             </section>
@@ -101,7 +101,7 @@ const Index = () => {
               ]?.map((item, _index) => (
                 <div className='mb-20 md:mb-32'>
                   <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
-                  <H6>{item?.description}</H6>
+                  <H6 className='ml-28'>{item?.description}</H6>
                 </div>
               ))}
             </section>

@@ -1,67 +1,47 @@
+import Link from 'next/link';
 import { useState } from 'react'
 import Arrow from '../Typography/Arrow'
-import { H1, H2, H6, Button, Paragraph, Caption } from '../Typography'
+import { H1, H2, H4, H6, Button, Paragraph, Caption } from '../Typography'
 
 const Index = ({ }) => {
 
     return (
         <footer className='relative bg-theme pt-72 md:pt-162 overflow-hidden'>
-            <div className="container relative z-10 mx-auto px-20 md:px-24 lg:px-32">
+            <div className="container relative z-10 mx-auto px-20 md:px-24 lg:px-32 pb-42 md:pb-68">
                 <div className=''>
-                    <H1 className={'block md:hidden mr-auto'}>Get in touch with us</H1>
-                    <section className='w-full flex items-start gap-99 mb-54 md:mb-20'>
-                        <H1 className={'hidden md:block mr-auto'}>Get in touch with us</H1>
-                        <ul>
-                            {['Home', 'Community', 'Contacts', 'Investors']?.map((item, _index) => (
-                                <li key={_index} className='text-[#FAFAFA] text-base md:text-sm font-normal transition-all cursor-pointer hover:underline mb-12'>{item}</li>
-                            ))}
-                        </ul>
+                    <section className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-42 md:gap-99 mb-54 md:mb-20'>
                         <div>
-                            <ul className='mb-32'>
-                                {['Terms & Conditions', 'Privacy Policy', 'Investor Privacy Notice', 'Cookies Policy']?.map((item, _index) => (
-                                    <li key={_index} className='text-[#FAFAFA] text-[12px] font-normal transition-all cursor-pointer hover:underline mb-4'>{item}</li>
-                                ))}
-                            </ul>
-                            <ul>
-                                {['Twitter', 'Linkedin', 'Medium']?.map((item, _index) => (
-                                    <li key={_index} className='text-[#FAFAFA] text-[12px] font-normal transition-all cursor-pointer hover:underline mb-4'>{item}</li>
+                            <Link href={'/'}>
+                                <img className="h-26 md:h-28 mb-20" src="/assets/svg/logo-nav.svg" alt="Logo" />
+                            </Link>
+                            <p className='text-[#FAFAFA] text-base font-normal mb-12'>We specialize in connecting people through innovative processes, allowing humans to focus on what they do best.</p>
+                        </div>
+                        <div>
+                            <H4 className={'block font-semibold mr-auto mb-20'}>important links</H4>
+                            <ul className='grid grid-cols-2 md:block'>
+                                {['Services', 'Industries', 'Products', 'Automation', 'Integration']?.map((item, _index) => (
+                                    <li key={_index} className='text-[#FAFAFA] text-base font-normal transition-all cursor-pointer hover:underline mb-4'>{item}</li>
                                 ))}
                             </ul>
                         </div>
-                    </section>
-                    <section className='flex flex-col md:flex-row items-start gap-36 md:gap-99'>
-                        <div className=''>
-                            <div className='text-[#FAFAFA] font-normal text-2xs mb-32'>
-                                <span className='block transition-all cursor-pointer hover:underline mb-4'>4517 Washington Ave.</span>
-                                <span className='transition-all cursor-pointer hover:underline'>Manchester, Kentucky 39495</span>
-                            </div>
-                            <div className='hidden md:block text-[#FAFAFA] font-normal text-2xs mb-32'>
-                                <span className='block transition-all cursor-pointer hover:underline mb-4'>4140 Parker Rd. Allentown, New</span>
-                                <span className='transition-all cursor-pointer hover:underline'>Mexico 31134</span>
-                            </div>
-                            <div className='hidden md:block text-[#FAFAFA] font-normal text-2xs mb-32'>
-                                <span className='block transition-all cursor-pointer hover:underline mb-4'>3891 Ranchview Dr.</span>
-                                <span className='transition-all cursor-pointer hover:underline'>Richardson, California 62639</span>
+                        <div className='md:col-span-2'>
+                            <H1 className={'block mr-auto mb-30'}>Get in touch with us</H1>
+                            <div className='flex flex-col justify-end'>
+                                <div className='mb-20'>
+                                    <input className='w-full h-40 sm:h-50 rounded-md text-[#D8D8D8] px-24' type="text" placeholder='Email address' />
+                                </div>
+                                <div className='mb-20'>
+                                    <textarea className='w-full min-h-[120px] rounded-md text-[#D8D8D8] py-18 px-24' type="text" placeholder='Your message' />
+                                </div>
+                                <div className="flex">
+                                        <Button className='!w-fit !bg-[#E95018] text-white !h-46 sm:!h-60 lg:!h-72 uppercase md:!text-2xs px-26 md:px-36 ml-auto'>Submit</Button>
+                                    </div>
                             </div>
                         </div>
-                        <div>
-                            <input className='w-full h-80 bg-black border border-[#18181B] text-white !outline-none !shadow-none text-2xs transition-all focus:!border-[#3a3a42] rounded-none pl-32 pr-16' type="text" placeholder='Email address' />
-                            <textarea className='w-full h-180 bg-black border !border-[#18181B] text-white !outline-none !shadow-none transition-all focus:!border-[#3a3a42] text-2xs rounded-none pt-32 pl-32 pb-16 pr-16' type="text" placeholder='Your message' />
-                            <div className='group flex items-center justify-between w-fulll h-64 relative border-l !border-l-[#F3722C] transition-all hover:!border-[#3a3a42] cursor-pointer py-24 px-32'>
-                                <span className='text-xs text-white font-normal uppercase'>Send</span>
-                                <span className='relative flex items-center justify-center transition-all group-hover:translate-x-24 border border-transparent aspect-square rounded-full p-4'>
-                                    <Arrow />
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section className='w-full flex items-center justify-center md:justify-between py-52'>
-                        <Paragraph className='text-white text-center md:text-left text-[12px] font-medium'>Tetheree © All rights reserved</Paragraph>
-                        <Paragraph className='hidden md:block text-white text-[12px] font-medium'>2025</Paragraph>
                     </section>
                 </div>
             </div>
-            <img className="w-full absolute -bottom-2/4 -right-2/4 object-cover" src="/assets/about-us-blur.svg" alt="" />
+            {/* <img className="w-full absolute -bottom-2/4 -right-2/4 object-cover" src="/assets/about-us-blur.svg" alt="" /> */}
         </footer>
     )
 }
