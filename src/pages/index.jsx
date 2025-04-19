@@ -114,21 +114,6 @@ const Index = () => {
         btnTitle="Explore Our Products"
       />
 
-      <div className="container relative z-10 flex flex-col px-20 mx-auto">
-        <section className={`w-full flex flex-col justify-center pt-46`}>
-          <H2 className={`font-semibold text-left mb-24 md:mb-32`}></H2>
-        </section>
-        <section className='flex flex-col md:flex-row flex-wrap lg:flex-nowrap items-stretch justify-between gap-20 mb-99'>
-          {?.map((item, _index) => (
-            <Tab className={'!block !w-full !h-auto bg-[#E4E4E733] !px-26 !pt-36 !pb-42'} >
-              <img className='w-24 mb-12' src={`/assets/Leaf.svg`} alt="" />
-              <H4 className={`font-medium text-left mb-13`}>{item?.title}</H4>
-              <Paragraph className={`font-normal w-full text-left`}>{item?.subTitle}</Paragraph>
-            </Tab>
-          ))}
-        </section>
-      </div>
-
       <IndustryWrapper
         titleClassName='text-theme'
         title='Next-Level Automation & Integrations'
@@ -138,7 +123,7 @@ const Index = () => {
           {[{ title: 'Customized Workflows', subTitle: 'Automate repetitive tasks, enhance accuracy, and improve efficiency across all business functions.' }, { title: 'Seamless Integrations', subTitle: 'Connect existing tools, enterprise software, and third-party services to create a frictionless, scalable system.' }, { title: 'AI-Powered Insights', subTitle: 'Leverage AI-driven automation for predictive analytics, smart data processing, and workflow optimization.' }]?.map((item, _index) => (
             <div className='mb-20 md:mb-32'>
               <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
-              <H6 className='ml-28'>{item?.description}</H6>
+              <H6 className='ml-28'>{item?.subTitle}</H6>
             </div>
           ))}
         </section>
