@@ -116,10 +116,10 @@ const Index = () => {
 
       <div className="container relative z-10 flex flex-col px-20 mx-auto">
         <section className={`w-full flex flex-col justify-center pt-46`}>
-          <H2 className={`font-semibold text-left mb-24 md:mb-32`}>Next-Level Automation & Integrations</H2>
+          <H2 className={`font-semibold text-left mb-24 md:mb-32`}></H2>
         </section>
         <section className='flex flex-col md:flex-row flex-wrap lg:flex-nowrap items-stretch justify-between gap-20 mb-99'>
-          {[{ title: 'Customized Workflows', subTitle: 'Automate repetitive tasks, enhance accuracy, and improve efficiency across all business functions.' }, { title: 'Seamless Integrations', subTitle: 'Connect existing tools, enterprise software, and third-party services to create a frictionless, scalable system.' }, { title: 'AI-Powered Insights', subTitle: 'Leverage AI-driven automation for predictive analytics, smart data processing, and workflow optimization.' }]?.map((item, _index) => (
+          {?.map((item, _index) => (
             <Tab className={'!block !w-full !h-auto bg-[#E4E4E733] !px-26 !pt-36 !pb-42'} >
               <img className='w-24 mb-12' src={`/assets/Leaf.svg`} alt="" />
               <H4 className={`font-medium text-left mb-13`}>{item?.title}</H4>
@@ -128,6 +128,21 @@ const Index = () => {
           ))}
         </section>
       </div>
+
+      <IndustryWrapper
+        titleClassName='text-theme'
+        title='Next-Level Automation & Integrations'
+        subTitleClassName='w-full lg:w-4/6 mb-46'
+        btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+        <section className='w-full lg:w-4/6 flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap ml-12 md:ml-32'>
+          {[{ title: 'Customized Workflows', subTitle: 'Automate repetitive tasks, enhance accuracy, and improve efficiency across all business functions.' }, { title: 'Seamless Integrations', subTitle: 'Connect existing tools, enterprise software, and third-party services to create a frictionless, scalable system.' }, { title: 'AI-Powered Insights', subTitle: 'Leverage AI-driven automation for predictive analytics, smart data processing, and workflow optimization.' }]?.map((item, _index) => (
+            <div className='mb-20 md:mb-32'>
+              <H4 className={'!font-semibold mb-24'}><span className='inline-block text-[#E95018] mr-6'><img className='w-18 h-18' src="/assets/tick-icon.svg" alt="" /></span> {item?.title}</H4>
+              <H6 className='ml-28'>{item?.description}</H6>
+            </div>
+          ))}
+        </section>
+      </IndustryWrapper>
 
       <Footer />
       {/* </div>
