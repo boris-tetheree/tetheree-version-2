@@ -129,21 +129,6 @@ const Index = () => {
         </section>
       </div>
 
-      <div className="container relative z-10 flex flex-col px-20 mx-auto pb-24 md:pb-36 lg:pb-46">
-        <section className='flex flex-col md:flex-row items-stretch justify-between gap-24 md:gap-36'>
-          {[
-            { title: 'Our values ​​and commitments', subTitle: 'Unlock the future of efficiency with our cutting-edge automation solutions. We specialize in connecting people through innovative processes, allowing humans to focus on what they do best.' },
-            { title: 'Customized Automation', subTitle: 'Maximize the potential of industry-leading tools with our customized integration solutions. We help you make the most of whats available in the market by seamlessly' }
-          ]?.map((item, _index) => (
-            <div key={_index} className='bg-[#01000099] border border-[#5C5C5C] rounded-md pt-36 pb-26 px-42'>
-              <H4 className={`font-semibold text-left mb-13`}>{item?.title}</H4>
-              <Paragraph className={`font-normal w-full text-left mb-24`}>{item?.subTitle}</Paragraph>
-              <Button onClick={() => router.push('/lets-talk')} className='!bg-transparent text-white !h-60 lg:!h-72 uppercase md:!text-base !pl-0 pr-26 md:pr-36'>GET A QUOTE</Button>
-            </div>
-          ))}
-        </section>
-      </div>
-
       <Footer />
       {/* </div>
       </main> */}
