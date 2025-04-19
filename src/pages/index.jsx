@@ -118,7 +118,7 @@ const Index = () => {
         titleClassName='text-theme'
         title='Next-Level Automation & Integrations'
         subTitleClassName='w-full lg:w-4/6 mb-46'
-        btnClassName='bg-[#E95018] text-white uppercase md:h-72'
+        btnClassName='bg-[#E95018] text-white uppercase md:h-72'>
         <section className='w-full lg:w-4/6 flex flex-col items-stretch gap-16 flex-wrap xl:flex-nowrap ml-12 md:ml-32'>
           {[{ title: 'Customized Workflows', subTitle: 'Automate repetitive tasks, enhance accuracy, and improve efficiency across all business functions.' }, { title: 'Seamless Integrations', subTitle: 'Connect existing tools, enterprise software, and third-party services to create a frictionless, scalable system.' }, { title: 'AI-Powered Insights', subTitle: 'Leverage AI-driven automation for predictive analytics, smart data processing, and workflow optimization.' }]?.map((item, _index) => (
             <div className='mb-20 md:mb-32'>
