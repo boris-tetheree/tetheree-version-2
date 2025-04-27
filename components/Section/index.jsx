@@ -5,7 +5,7 @@ export const FeaturedProduct = ({ containerClassName, title, subTitle, btnClassN
   const router = useRouter();
 
     return (
-        <section className={`${containerClassName} relative bg-[#121212] py-136`}>
+        <section className={`${containerClassName} relative bg-[#121212] py-50 mt-50 mb-50`}>
             <div className="container flex flex-col items-center lg:max-w-[1000px] mx-auto px-20 md:px-64">
                 <H2 className={'mb-6'}>{title}</H2>
                 {subTitle && <H6 className={'text-center mb-50'}>{subTitle}</H6>}
