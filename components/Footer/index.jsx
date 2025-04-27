@@ -29,24 +29,32 @@ const Index = ({ }) => {
                             {/* Background Card only around Form */}
                             <div className="w-full h-full bg-[#b7b7b921] rounded-3xl p-20 md:px-20 md:py-20 flex flex-col">
                                 <div className='flex flex-col'>
+                                <div className='flex flex-col justify-end'>
+                                <div className="grid grid-cols-2 gap-12">
                                     <div className='mb-20'>
-                                        <label className='block text-2xs font-normal text-white mb-12' htmlFor="">What’s your email?</label>
-                                        <input
-                                            className='w-full h-40 sm:h-50 rounded-md bg-white text-black px-24 border-none placeholder:text-gray-500'
-                                            type="text"
-                                            placeholder='Type your main email'
-                                        />
+                                        <label className='block text-2xs text-white font-normal mb-12' htmlFor="">What’s your name?</label>
+                                        <input className='w-full h-40 sm:h-50 rounded-md text-[#D8D8D8] px-24' type="text" placeholder='Type your full name' />
                                     </div>
                                     <div className='mb-20'>
-                                        <label className='block text-2xs font-normal text-white mb-12' htmlFor="">Your Message</label>
-                                        <textarea
-                                            className='w-full min-h-[120px] rounded-md bg-white text-black py-18 px-24 border-none placeholder:text-gray-500'
-                                            placeholder='Your message'
-                                        />
+                                        <label className='block text-2xs text-white font-normal mb-12' htmlFor="">What’s your email?</label>
+                                        <input className='w-full h-40 sm:h-50 rounded-md text-[#D8D8D8] px-24' type="text" placeholder='Type your main email' />
+                                    </div>
+                                </div>
+                                <div className='mb-20'>
+                                        <label className='block text-2xs text-white font-normal mb-12' htmlFor="">What’s services are you looking for?</label>
+                                        <input className='w-full h-40 sm:h-50 rounded-md text-[#D8D8D8] px-24' type="text" placeholder='Type your service name' />
+                                    </div>
+                                  
+                                    <div className='mb-20'>
+                                        <label className='block text-2xs text-white font-normal mb-12' htmlFor="">What’s your budget for this project?</label>
+                                        <textarea className='w-full min-h-[120px] rounded-md text-[#D8D8D8] py-18 px-24' type="text" placeholder='Tell us about your Project' />
                                     </div>
                                     <div className="flex">
-                                        <Button className='!w-fit !bg-[#E95018] text-white !h-46 sm:!h-60 lg:!h-72 uppercase md:!text-2xs px-26 md:px-36 ml-auto'>Submit</Button>
+                                        <Button className='!w-fit !bg-[#E95018] text-white !h-46 sm:!h-60 lg:!h-72 uppercase md:!text-2xs px-26 md:px-36 ml-auto'>Get Started</Button>
                                     </div>
+                                    </div>
+                                    
+                                  
                                 </div>
                             </div>
                         </div>
@@ -57,7 +65,7 @@ const Index = ({ }) => {
                     <div className="border-t border-white/20 pt-24 mt-24 flex flex-col md:flex-row justify-between items-center gap-12">
                         <div className="flex flex-wrap gap-12">
                             {/* Important Links here */}
-                            {['Services', 'Industries', 'Products', 'Automations', 'Integrations']?.map((link, index) => (
+                            {['Services', 'Industries', 'Products', 'Automation', 'Integration']?.map((link, index) => (
                                 <Link key={index} href={`/${link.toLowerCase().replace(/\s+/g, '-')}`}>
                                     <span className="text-[#FAFAFA] text-sm font-normal cursor-pointer hover:underline">{link}</span>
                                 </Link>
