@@ -48,7 +48,7 @@ const Index = ({ supTitle, title, subTitle, headerImg = false, aboutUs, contactF
                                         <input className='w-full h-40 sm:h-50 rounded-md text-[#D8D8D8] px-24' type="text" placeholder='Type your service name' />
                                     </div>
                                     <section className='mb-16'>
-                                        <label className='block text-2xs text-white font-normal mb-12' htmlFor="">What’s services are you looking for?</label>
+                                        <label className='block text-2xs text-white font-normal mb-12' htmlFor="">What’s your budget for this project?</label>
                                     <div className="flex items-stretch gap-12">
                                         {[...Array(3)]?.map((item, _index) => (
                                             <div key={_index} className='w-full h-auto bg-[#E4E4E733] rounded-md'>
@@ -58,7 +58,7 @@ const Index = ({ supTitle, title, subTitle, headerImg = false, aboutUs, contactF
                                     </div>
                                     </section>
                                     <div className='mb-20'>
-                                        <label className='block text-2xs text-white font-normal mb-12' htmlFor="">What’s your budget for this project?</label>
+                                        <label className='block text-2xs text-white font-normal mb-12' htmlFor="">Your Message </label>
                                         <textarea className='w-full min-h-[120px] rounded-md text-[#D8D8D8] py-18 px-24' type="text" placeholder='Tell us about your Project' />
                                     </div>
                                     <div className="flex">
