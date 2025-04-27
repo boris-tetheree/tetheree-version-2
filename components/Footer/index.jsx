@@ -57,7 +57,7 @@ const Index = ({ }) => {
                     <div className="border-t border-white/20 pt-24 mt-24 flex flex-col md:flex-row justify-between items-center gap-12">
                         <div className="flex flex-wrap gap-12">
                             {/* Important Links here */}
-                            {['Services', 'Industries', 'Products', 'Automation', 'Integration']?.map((link, index) => (
+                            {['Services', 'Industries', 'Products', 'Automations', 'Integrations']?.map((link, index) => (
                                 <Link key={index} href={`/${link.toLowerCase().replace(/\s+/g, '-')}`}>
                                     <span className="text-[#FAFAFA] text-sm font-normal cursor-pointer hover:underline">{link}</span>
                                 </Link>
