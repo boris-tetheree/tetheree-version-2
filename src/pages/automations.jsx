@@ -4,6 +4,7 @@ import Showcase from '../../components/Showcase'
 import { IndustryWrapper } from '../../components/Section';
 import { useLocomotiveScroll } from "../../hooks/useLocomotiveScroll";
 import { Tab, H1, H2, H3, H4, H5, H6, Paragraph, Button } from "../../components/Typography";
+import { FeaturedProduct, VideoContent } from '../../components/Section';
 
 const Index = () => {
   const { scrollRef } = useLocomotiveScroll();
@@ -14,9 +15,9 @@ const Index = () => {
       <div data-scroll-section> */}
       <Showcase
         primaryBtn={false}
-        title={'Customized Automations'}
+        title={'Smarter Workflows Through Intelligent Automation'}
         headerImgSrc={"/assets/header/Automation.svg"}
-        subTitle={'Streamline your workflows with our fully customizable automation solutions. We automate and monitor tasks, ensuring efficiency at every step. From routine tasks to complex processes, our automation tools are designed to keep your business running smoothly and efficiently.'}
+        subTitle={'Implement automated solutions that eliminate busywork, boost precision, and empower your team to focus on high-impact tasks—powered by AI and built to scale with your business.'}
       />
       <div id="industries">
         <IndustryWrapper
@@ -47,13 +48,19 @@ const Index = () => {
 
         </IndustryWrapper>
 
-        <IndustryWrapper
-          title='The Future of Automation – AI-Driven & Scalable'
-          subTitleClassName='w-full md:w-4/6 mb-46'
-          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
-          subTitle='We don’t just automate workflows—we create intelligent, adaptive systems that use AI, machine learning, and predictive analytics to optimize operations. Whether its AI-powered demand forecasting in logistics, automated compliance tracking in property management, or smart content workflows in media, we ensure your business stays ahead of the curve.'
-        >
-        </IndustryWrapper>
+    
+
+        <div className="bg-[#121212] py-50 mt-50 mb-50">
+          <div className="container mx-auto px-20 md:px-32">
+            <FeaturedProduct
+              containerClassName=""
+              titleClassName='text-theme text-left mb-10'
+              title="The Future of Automation – AI-Driven & Scalable"
+              subTitle="We don’t just automate workflows—we create intelligent, adaptive systems that use AI, machine learning, and predictive analytics to optimize operations. Whether its AI-powered demand forecasting in logistics, automated compliance tracking in property management, or smart content workflows in media, we ensure your business stays ahead of the curve."
+              
+            />
+          </div>
+        </div>
 
         <IndustryWrapper
           title='Let’s Build Your Custom Automation Workflow'
