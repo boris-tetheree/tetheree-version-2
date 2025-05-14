@@ -27,9 +27,9 @@ const Index = () => {
       <div data-scroll-section> */}
       <Showcase
         primaryBtn={false}
-        title={'Industries'}
+        title={'Industry Expertise, Intelligent Solutions'}
         headerImgSrc={"/assets/header/Industries.svg"}
-        subTitle={'Our expertise spans a broad spectrum of industries, ensuring that no matter your field, we have the tools to drive your success:'}
+        subTitle={'Tetheree partners with organizations across sectors to build integrated, AI-driven software that solves real operational challenges—customized for the way your industry works.'}
       />
       <div id="industries">
         <IndustryWrapper
