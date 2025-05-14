@@ -16,7 +16,7 @@ const Index = () => {
     { name: 'Products', link: "/products"  },
     { name: 'Automations', link: "/automations"  },
     { name: 'Integrations', link: "/integrations"  },
-    { name: 'About Us', link: '/about-us' },
+    
   ];
 
   const ScrollToSection = (id) => {
