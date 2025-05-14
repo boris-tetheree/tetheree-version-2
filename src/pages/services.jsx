@@ -14,9 +14,9 @@ const Index = () => {
       <div data-scroll-section> */}
       <Showcase
         primaryBtn={false}
-        title={'Services'}
+        title={'Custom Software Services That Drive Results'}
         headerImgSrc={"/assets/header/Services.svg"}
-        subTitle={'Unlock the future of efficiency with our cutting-edge automation solutions. We specialize in connecting people through innovative processes, allowing humans to focus on what they do best. Our tailored efficiency solutions are designed to meet the unique needs of your business, integrating seamlessly with existing workflows and use cases. Harness the power of artificial intelligence to streamline operations across various platforms, including:'}
+        subTitle={'From concept to deployment, we deliver tailored software solutions that connect your systems, automate your workflows, and scale with your business—powered by modern architecture and infused with AI.'}
       />
 
       <div id="industries">
