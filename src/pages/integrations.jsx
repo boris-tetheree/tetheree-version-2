@@ -4,6 +4,7 @@ import Showcase from '../../components/Showcase'
 import { IndustryWrapper } from '../../components/Section';
 import { useLocomotiveScroll } from "../../hooks/useLocomotiveScroll";
 import { Tab, H1, H2, H3, H4, H5, H6, Paragraph, Button } from "../../components/Typography";
+import { FeaturedProduct, VideoContent } from '../../components/Section';
 
 const Index = () => {
   const { scrollRef } = useLocomotiveScroll();
@@ -14,9 +15,9 @@ const Index = () => {
       <div data-scroll-section> */}
       <Showcase
         primaryBtn={false}
-        title={'Customized Integrations'}
+        title={'Seamless Integrations for a Unified Workflow'}
         headerImgSrc={"/assets/header/integration.svg"}
-        subTitle={'Maximize the potential of industry-leading tools with our customized integration solutions. We help you make the most of whats available in the market by seamlessly incorporating leading technologies into your existing systems, complete with recognizable integration logos.'}
+        subTitle={'Connect your tools, platforms, and data into one intelligent ecosystem—eliminating silos, reducing friction, and enabling real-time collaboration across your organization.'}
       />
       <div id="industries">
         <IndustryWrapper
@@ -88,14 +89,20 @@ const Index = () => {
           <H6>Our team ensures that your integrations work flawlessly and evolve with your business needs.</H6>
         </IndustryWrapper>
 
-        <IndustryWrapper
-          title='The Future of Integration – AI, Automation & Scalable Systems'
-          subTitleClassName='w-full md:w-4/6 mb-46'
-          btnClassName='bg-[#E95018] text-white uppercase md:h-72'
-          subTitle='We go beyond simple connectivity—we create intelligent, scalable integrations that leverage AI, automation, and predictive analytics to optimize your operations. From automated data processing to AI-driven insights, our integrations don’t just connect systems; they enhance and future-proof them.'
-        >
+       
 
-        </IndustryWrapper>
+  <div className="bg-[#121212] py-50 mt-50 mb-50">
+          <div className="container mx-auto px-20 md:px-32">
+            <FeaturedProduct
+              containerClassName=""
+              titleClassName='text-theme  text-left  mb-10'
+              title="The Future of Integration – AI, Automation & Scalable Systems"
+              subTitle="We go beyond simple connectivity—we create intelligent, scalable integrations that leverage AI, automation, and predictive analytics to optimize your operations. From automated data processing to AI-driven insights, our integrations don’t just connect systems; they enhance and future-proof them."
+              
+            />
+          </div>
+        </div>
+
 
         <IndustryWrapper
           title='Let’s Build Your Perfect Integration'
