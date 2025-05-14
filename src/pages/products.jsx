@@ -14,9 +14,9 @@ const Index = () => {
       <div data-scroll-section> */}
       <Showcase
         primaryBtn={false}
-        title={'SaaS Offerings'}
+        title={'Powerful Products, Built for Performance'}
         headerImgSrc={"/assets/header/Products.svg"}
-        subTitle={'Our Software as a Service (SaaS) offerings provide efficiency and workflow optimization for a wide range of verticals. Here are just a few examples of how our solutions can be applied:'}
+        subTitle={'Explore Tetheree’s suite of modular, intelligent software solutions—designed to jumpstart development, accelerate workflows, and integrate seamlessly into your existing systems.'}
       />
       <div id="industries">
         <IndustryWrapper
