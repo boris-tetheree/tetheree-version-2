@@ -16,7 +16,7 @@ const Index = () => {
 
   const tailoredSoftwares = [
     {
-      title: 'Prebuilt Software Solutions',
+      title: '123123123 Prebuilt Software Solutions',
       description: 'Rapidly deploy ERP, CRM, CMS, TMS, LMS, and Media Solutions with seamless integration and minimal setup.'
     },
     {
